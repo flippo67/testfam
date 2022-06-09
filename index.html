@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.avaxdefi.farm/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Nov 2021 00:01:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BUSD Moonfarm</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/busd-logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+  body {
+    background-image: url('assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+    <!--  <h1 class="logo me-auto me-lg-0"><a href="index-2.html">AVAX Moonfarm<span>.</span></a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo me-auto me-lg-0"><img style="max-height:200%; width:350px;" src="assets/img/multichain.gif" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#services">Invest</a></li>
+          <li><a class="nav-link scrollto" href="#dashboard">Dashboard</a></li>
+          <li><a class="nav-link scrollto" href="#farms">Farms</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" target="_blank" href="https://app.apeswap.finance/swap?outputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56">Buy BUSD</a></li>
+          <li>
+            <a class="nav-link" href="https://testnet.bscscan.com/address/0x8761ffcf2cf8435298087ff7204fac049393f165" target="_blank"><img class="contract-logo" id="logo" alt="" src="assets/img/bscscan-logo-light-circle.svg"></img>Verified Contract</a>
+          </li>
+          <li>
+            <a href="https://t.me/joinchat/PI9q1hYvZLcxMjk0" target="_blank" class="nav-link telegram"><i class="bx bxl-telegram bx-border"></i>Moonfarms</a>
+          </li>
+          <li>
+            <a class="nav-link" >
+              <button id="enableMetamask" class="btn connect-btn">Connect</button>
+            </a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1><span><img class="hero-logo" alt="" src="assets/img/aavefarm-header-text.png"></span></h1>
+          <h2>Choose your ROI. <strong class="avax">3,7,6.5,6% Daily</strong>.</h2>
+          <h2>Invest <span class="avax">MATIC</span> for a chance to win the weekly jackpot!</h2>
+          <h2><span class="avax">Anti-whale feature, max withdraw is 7500 MATIC!</span></h2>
+          <h2><span class="tickets">Be sure to grab some tickets, there might be something extra airdropped your way!</span></h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2" data-aos="zoom-in" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h2>Invest <span class="avax">AAVE</span> for a chance to win the weekly jackpot!</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="150">
+        <a href="#services" class="deposit-btn scrollto">Invest</a>
+      </div>
+
+      <div class="row gy-4 justify-content-center" data-aos="zoom-in" data-aos-delay="150">
+        <div class="col-xl-2 col-md-4 hero-row">
+          <div class="icon-box">
+            <h4>
+              <div id="total-invested">0</div>
+            </h4>
+            <div class="totals-text">Total <strong class="avax">AAVE</strong> Invested</div>
+            <div class="usd">
+              <span>$</span><span id="total-invested-usd">0 </span> USDT
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 hero-row">
+          <div class="icon-box">
+            <h4>
+              <div id="total-bonus">0</div>
+            </h4>
+            <div class="totals-text">Total <strong class="avax">AAVE</strong> Referrals</div>
+            <div class="usd">
+              <span>$</span><span id="total-bonus-usd">0 </span> USDT
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 hero-row">
+          <div class="icon-box">
+            <h4>
+              <div id="total-lottery">0</div>
+            </h4>
+            <div class="totals-text">Total <strong class="avax">AAVE</strong> Lottery</div>
+            <div class="usd">
+              <span>$</span><span id="total-lottery-usd">0 </span> USDT
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 hero-row">
+          <div class="icon-box">
+            <h4>
+              <div id="contract-balance">0</div>
+            </h4>
+            <div class="totals-text">Total <strong class="avax">AAVE</strong> In Contract</div>
+            <div class="usd">
+              <span>$</span><span id="contract-balance-usd">0 </span> USDT
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Plans Section ======= -->
+    <section id="services" class="d-flex services align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Lottery</h2>
+        </div>
+
+
+        <div class="row gy-2 mt-1">
+          <div class="col-lg-3 col-md-5">
+            <div class="approve-container">
+              <h5>User Allowance</h5>
+              </br>
+              <div style="padding-bottom: 5px;">
+                <strong class="avax">AAVE</strong> Balance: <span id="user-balance">0</span>
+              </div>
+              <div style="padding-bottom: 10px;">
+                <strong class="avax">AAVE</strong> Approved: <span id="user-approved-spend">0</span>
+              </div>
+              <div>
+                <input class="form-control" id="approve-spend" name="approved-spend" step="1" type="number" value="5">
+                <button class="btn btn-invest" id="" onclick="approveFarm()" role="button">APPROVE AAVE FARMER</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-5">
+            <div class="lottery-container">
+              <div class="row">
+                <div style="display: inline-flex">
+                  <h4>
+                    <i class="bi-dice-6-fill"></i>
+                    Weekly Lottery - Round
+                    <span id="lottery-round">0</span>
+                  </h4>
+                </div>
+                <h5 style="padding-top: 5px; padding-bottom: 15px;">
+                  <i class="bi-minecart"></i>
+                  Current Jackpot:
+                  <span id="lottery-pot">0</span><strong class="avax"> AAVE </strong>
+                  <div style="font-size: 12px; display: inline-flex;">
+                    <div style="justify-content: space-between;">
+                      ($<span id="lottery-pot-usd" >0 </span> USDT)
+                    </div>
+                  <div>
+                </h5>
+                <div class="col-lg-6">
+                  <div style="padding-bottom: 5px;">
+                    <i class="bi-arrow-right-square"></i>
+                    Lottery Start: <span id="lottery-start">0</span>
+                  </div>
+                  <div style="padding-bottom: 5px;">
+                    <i class="bi-clock"></i>
+                    Lottery End: <span id="lottery-end">0</span>
+                  </div>
+                  <div style="padding-bottom: 10px;">
+                    <i class="bi-people"></i>
+                    Total Participants: <span id="round-participants">0</span>
+                  </div>
+                  <div style="padding-top: 10px; font-size: 16px;">
+                    <i class="bi-trophy-fill"></i>
+                    Previous Winner: <span id="previous-winner">--</span>
+                  </div>
+
+                </div>
+                <div class="col-lg-5">
+                  <div style="padding-bottom: 5px;">
+                    <i class="ri-ticket-2-line"></i>
+                    Your Tickets: <span id="your-tickets">0</span>
+                  </div>
+                  <div style="padding-bottom: 5px;">
+                    <i class="ri-ticket-2-line"></i>
+                    Total Tickets: <span id="total-tickets">0</span>
+                  </div>
+                  <div style="padding-bottom: 10px;">
+                    <i class="ri-ticket-2-line"></i>
+                    Your Purchasable Tickets: <span id="max-user-tickets">0</span>
+                  </div>
+                  <div style="padding-top: 10px; font-size: 16px;">
+                    <i class="ri-ticket-2-line"></i>
+                    Ticket Price:
+                    <span id="ticket-price">0 </span><strong class="avax"> AAVE </strong>
+                    <div style="font-size: 12px; display: inline-flex">
+                      <div style="justify-content: space-between;">
+                        ($<span id="ticket-price-usd" >0 </span> USDT)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title section-title-lottery">
+          <h2>Plans</h2>
+        </div>
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/aave-logo.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>Plan 1</h4>
+                  <h5>3% daily, 200 days</h5>
+                  <h5>600% ROI*</h5>
+                </span>
+              </div>
+              </br>
+              <h5>active deposits: <span id="active-invest1">0</span> <strong class="avax">AAVE</strong></h5>
+              <h5>available: <span id="available1">0</span> <strong class="avax">AAVE</strong></h5>
+              <input class="form-control" id="eth-to-spend1" name="spend" step="1" type="number" value="" hidden>
+              <button class="btn btn-invest" id="invest-btn1" onclick="investInPlan(0)" role="button" disabled>INVEST</button>
+              <button class="btn btn-reinvest" id="reinvest-btn1" onclick="reinvestInPlan(0)" role="button" disabled>COMPOUND</button>
+              <div>
+                Minimum deposit AAVE
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/aave-logo.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>Plan 2</h4>
+                  <h5>7% daily, 40 days</h5>
+                  <h5>280% ROI*</h5>
+                </span>
+              </div>
+              </br>
+              <h5>active deposits: <span id="active-invest2">0</span> <strong class="avax">AAVE</strong></h5>
+              <h5>available: <span id="available2">0</span> <strong class="avax">AAVE</strong></h5>
+              <input class="form-control" id="eth-to-spend2" name="spend" step="1" type="number" value="" hidden>
+              <button class="btn btn-invest" id="invest-btn2" onclick="investInPlan(1)" role="button" disabled>INVEST</button>
+              <button class="btn btn-reinvest" id="reinvest-btn2" onclick="reinvestInPlan(1)" role="button" disabled>COMPOUND</button>
+              <div>
+                Minimum deposit AAVE
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/aave-logo.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>PLAN 3</h4>
+                  <h5>6.5% daily, 60 days</h5>
+                  <h5>390% ROI*</h5>
+                </span>
+              </div>
+
+              </br>
+              <h5>active deposits: <span id="active-invest3">0</span> <strong class="avax">AAVE</strong></h5>
+              <h5>available: <span id="available3">0</span> <strong class="avax">AAVE</strong></h5>
+              <input class="form-control" id="eth-to-spend3" name="spend" step="1" type="number" value="" hidden>
+              <button class="btn btn-invest" id="invest-btn3" onclick="investInPlan(2)" role="button" disabled>INVEST</button>
+              <button class="btn btn-reinvest" id="reinvest-btn3" onclick="reinvestInPlan(2)" role="button" disabled>COMPOUND</button>
+              <div>
+                Minimum deposit AAVE
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/aave-logo.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>PLAN 4</h4>
+                  <h5>6% daily, 80 days</h5>
+                  <h5>480% ROI*</h5>
+                </span>
+              </div>
+              </br>
+              <h5>active deposits: <span id="active-invest4">0</span> <strong class="avax">AAVE</strong></h5>
+              <h5>available: <span id="available4">0</span> <strong class="avax">AAVE</strong></h5>
+              <input class="form-control" id="eth-to-spend4" name="spend" step="1" type="number" value="" hidden>
+              <button class="btn btn-invest" id="invest-btn4" onclick="investInPlan(3)" role="button" disabled>INVEST</button>
+              <button class="btn btn-reinvest" id="reinvest-btn4" onclick="reinvestInPlan(3)" role="button" disabled>COMPOUND</button>
+              <div>
+                Minimum deposit AAVE
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-md-12 disclaimer">
+            <span>
+              <strong>*</strong>ROI estimates are what you'll receive after your initial investment
+            </span>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-md-12 disclaimer">
+            <i class="ri-alert-line"></i>
+            <span>
+              <strong>Note:</strong> The initial principal cannot be withdrawn, however the farm will pay daily dividends and
+              referrals rewards for the life of the contract. Please use at your own risk. Remember, never invest more than you can afford to lose
+              and always do your own research!
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Dashboard Section ======= -->
+    <section id="dashboard" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Dashboard</h2>
+        </div>
+        <div class="stats-container">
+          <ul>
+            <li>
+              <div class="stats-icon-box">
+                <i class="ri-bank-line ri-1x"></i>
+                Deposits
+                <div id="user-total-deposits">0</div>
+                <strong class="avax">AAVE</strong>
+                <div class="usd">
+                  <span>$</span><span id="user-total-deposits-usd">0 </span> USDT
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="stats-icon-box">
+                <i class="ri-coins-line ri-1x"></i>
+                Rewards*
+                <div id="user-dividends-and-referrals">0</div>
+                <strong class="avax">AAVE</strong>
+                <div class="usd">
+                  <span>$</span><span id="user-divs-and-refs-usd">0 </span> USDT
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="stats-icon-box">
+                <i class="ri-wallet-2-line ri-1x"></i>
+                Withdrawn
+                <div id="user-total-withdrawn">0</div>
+                <strong class="avax">AAVE</strong>
+                <div class="usd">
+                  <span>$</span><span id="user-total-withdrawn-usd">0 </span> USDT
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="stats-icon-box">
+                <i class="ri-user-2-line ri-1x"></i>
+                <span style="display: inline-flex;">Referrals (<div id="user-referral-count">0</div>)</span>
+                <div id="user-total-referrals">0</div>
+                <strong class="avax">AAVE</strong>
+                <div class="usd">
+                  <span>$</span><span id="user-total-referrals-usd">0 </span> USDT
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="timer">
+            <i class="bi-hourglass-split"></i>
+            Claim within
+            <span id="claim-timer"> 0 </span>
+          </div>
+          <div>
+            <button class="btn withdraw-btn" onclick="withdraw()" role="button" disabled>Withdraw Rewards</button>
+          </div>
+          <div class="referral-link">
+            <strong>Earn 3% when someone uses your referral link: </strong><a id="reflink"></i></a><span onclick="copyRef()"><i class="ri-file-copy-line"></i><span id="copied"></span>
+          </div>
+
+
+          <div class="deposits">
+            <div id="div-deposits">
+              <table id="table-deposits" class="table table-bordered table-dark">
+                <thead class="thead-dark">
+                  <tr>
+                    <th style="width: 15%">#</th>
+                    <th style="width: 16%">Plan</th>
+                    <th style="width: 16%">Rate</th>
+                    <th style="width: 19%">Invested</th>
+                    <th style="width: 17%">Start</th>
+                    <th style="width: 17%">Finish</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td colspan="6">No Deposits to Display </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-md-12 disclaimer">
+            <span>
+              <strong>*</strong>Rewards Balance includes unclaimed dividends, lottery rewards, and referral rewards.
+            </span>
+          </div>
+        </div>
+      </div>
+      <section id="dashboard" class="services">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+          </section> <!-- End Dashboard Section -->
+
+            <!-- ======= More Moonfarms ======= -->
+            <section id="farms" class="d-flex align-items-center justify-content-center">
+              <div class="container" data-aos="fade-up">
+                <div class="section-title">
+          <h2>MORE MOONFARMS</h2>
+          </div>
+          <div class="row gy-4 mt-1">
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box2">
+                <div class="icon">
+                  <a target="_blank" href="https://cryptonerdion.github.io/solmoonfarm.github.io/">
+                  <img src="assets/img/sol-logo.png" alt="" class="img-fluid"></img>
+                  <span>
+                    <h4>SOL MOONFARM</h4>
+                    <h5>✅Verified✅</h5>
+                  </span>
+                </a>
+                </div>
+                </br>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box2">
+                <div class="icon">
+                  <a target="_blank" href="https://cryptonerdion.github.io/bnbmoonfarm.github.io/">
+                  <img src="assets/img/bnb-logo.png" alt="" class="img-fluid"></img>
+                  <span>
+                    <h4>BNB MOONFARM</h4>
+                    <h5>✅Verified✅</h5>
+                  </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box2">
+                <div class="icon">
+                  <a target="_blank" href="https://cryptonerdion.github.io/maticmoonfarm.github.io/">
+                  <img src="assets/img/matic-logo.png" alt="" class="img-fluid"></img>
+                  <span>
+                    <h4>MATIC MOONFARM</h4>
+                    <h5>✅Verified✅</h5>
+                  </span>
+                  </a>
+                </div>
+                </br>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="icon-box2">
+                <div class="icon">
+                  <a target="_blank" href="https://cryptonerdion.github.io/dotmoonfarm.github.io/">
+                  <img src="assets/img/dot-logo.png" alt="" class="img-fluid"></img>
+                  <span>
+                    <h4>DOT MOONFARM</h4>
+                    <h5>✅Verified✅</h5>
+                  </span>
+                  </a>
+                </div>
+                </br>
+              </div>
+            </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box2">
+              <div class="icon">
+                <img src="assets/img/Question-Mark.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>???</h4>
+                  <h5>Coming Soon!</h5>
+                </span>
+              </div>
+              </br>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box2">
+              <div class="icon">
+                <img src="assets/img/Question-Mark.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>???</h4>
+                  <h5>Coming Soon!</h5>
+                </span>
+              </div>
+              </br>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box2">
+              <div class="icon">
+                <img src="assets/img/Question-Mark.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>???</h4>
+                  <h5>Coming Soon!</h5>
+                </span>
+              </div>
+              </br>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5">
+            <div class="icon-box2">
+              <div class="icon">
+                <img src="assets/img/Question-Mark.png" alt="" class="img-fluid"></img>
+                <span>
+                  <h4>???</h4>
+                  <h5>Coming Soon!</h5>
+                </span>
+              </div>
+              </br>
+            </div>
+          </div>
+
+    </section> <!-- End More moonfarms Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>FAQ</h2>
+        </div>
+
+        <!-- <div class="justify-content-center youtube" data-aos="fade-up">
+          <div>
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/yPi9QRLXweA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> -->
+        <div class="faq-list">
+          <ul>
+            <li>
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapse"
+                data-bs-target="#faq-list-1"
+                >How do I get started?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-1"
+                class="collapse show"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  AAVE Farmer operates on the Binance Smart Chain. To interact with the contract you need to
+                  install the Metamask browser extension. An identical mobile application is also available for
+                  IPhone and Android users.
+
+                  After you've installed metamask, connect your wallet by clicking the Connect Metamask button above.
+                </p>
+              </div>
+            </li>
+
+            <li >
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-list-2"
+                class="collapsed"
+                >How do I invest in AAVE Farmer?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-2"
+                class="collapse"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  Select an ROI plan from the 4 plans listed above, enter the amount you'd like to spend,
+                  and click "Invest." After the transaction has been approved and processed, you should see your
+                  deposit on your dashboard. Now just sit back and enjoy your passive income!
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bx bx-help-circle icon-help"></i>
+              <a
+                data-bs-toggle="collapse"
+                class="collapse"
+                data-bs-target="#faq-list-3"
+                >What makes AAVE Farmer different?
+                <i class="bx bx-chevron-down icon-show"></i
+                ><i class="bx bx-chevron-up icon-close"></i
+              ></a>
+              <div
+                id="faq-list-3"
+                class="collapse"
+                data-bs-parent=".faq-list"
+              >
+                <p>
+                  We're glad you asked! AAVE Farmer as several anti-dumping and anti-whale measures in place to ensure the longevity of the project.
+                  Plus, how about that lottery!?
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Frequently Asked Questions Section -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong><span>AAVE Farmer</span></strong>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/main_eth.js"></script>
+</body>
+
+
+<!-- Mirrored from www.avaxdefi.farm/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Nov 2021 00:01:13 GMT -->
+</html>
